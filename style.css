@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #6366f1;
+  --accent-color: #3f83f8;
+  --text-color: #333333;
+  --link-color: #2563eb;
+  --background-color: #ffffff;
+  --light-gray: #f0f0f0;
+  --gray: #808080;
+  --dark-gray: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  /*   overflow-x: hidden; */
+}
+
+html {
+  font-size: 63.5%;
+}
+
+body {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  height: 40rem;
+  width: 70rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.app-left-container {
+  width: 40%;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  display: flex;
+  justify-content: center;
+  padding-top: 12rem;
+}
+
+.app-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.logo {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  color: var(--dark-gray);
+  font-weight: 600;
+}
+
+.app-right-container {
+  width: 60%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+
+.city-input-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.city-input {
+  width: 26rem;
+  height: 4rem;
+  padding-left: 1.2rem;
+  border: 1px solid var(--link-color);
+  border-radius: 4px;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.city-input:focus-visible {
+  outline-color: var(--accent-color);
+}
+
+.submit-btn {
+  background-color: var(--accent-color);
+  width: 8rem;
+  height: 100%;
+  color: var(--background-color);
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.weather-information {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.weather-information h2 {
+  color: var(--primary-color);
+  font-size: 2.4rem;
+}
+
+.weather-information p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
